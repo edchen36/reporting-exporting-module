@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="ExportReportingModule_SMS_KoreInfoTechProject">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/jrxml"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/resources"/>
+        <property name="context-root" value="ExportReportingModule_SMS_KoreInfoTechProject"/>
+        <property name="java-output-path" value="/ExportReportingModule_SMS_KoreInfoTechProject/build/classes"/>
+    </wb-module>
+</project-modules>

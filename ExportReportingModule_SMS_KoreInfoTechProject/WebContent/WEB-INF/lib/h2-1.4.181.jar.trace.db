@@ -1,0 +1,90 @@
+12-21 19:15:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "TRIALTABLEA" already exists; SQL statement:
+Create table trialTableA (EMPLOYEE_ID NUMBER, EMPLOYEE_NAME VARCHAR2(40), JOB_ID NUMBER) [42101-181]
+12-21 19:45:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO TRIALTABLEB (46100[*],USER 1,101 "; expected "identifier"; SQL statement:
+Insert into trialTableB (46100,User 1,101 [42001-181]
+12-21 19:45:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO TRIALTABLEB (46101[*],USER 2,102 "; expected "identifier"; SQL statement:
+Insert into trialTableB (46101,User 2,102 [42001-181]
+12-21 19:45:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO TRIALTABLEB (46102[*],USER 3,103 "; expected "identifier"; SQL statement:
+Insert into trialTableB (46102,User 3,103 [42001-181]
+12-21 19:45:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO TRIALTABLEB (46103[*],USER 4,104 "; expected "identifier"; SQL statement:
+Insert into trialTableB (46103,User 4,104 [42001-181]
+12-21 19:46:25 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO TRIALTABLEB (46100[*],USER_1,101 "; expected "identifier"; SQL statement:
+Insert into trialTableB (46100,User_1,101 [42001-181]
+12-21 19:46:25 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO TRIALTABLEB (46101[*],USER_2,102 "; expected "identifier"; SQL statement:
+Insert into trialTableB (46101,User_2,102 [42001-181]
+12-21 19:46:25 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO TRIALTABLEB (46102[*],USER_3,103 "; expected "identifier"; SQL statement:
+Insert into trialTableB (46102,User_3,103 [42001-181]
+12-21 19:46:25 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO TRIALTABLEB (46103[*],USER_4,104 "; expected "identifier"; SQL statement:
+Insert into trialTableB (46103,User_4,104 [42001-181]
+12-21 19:46:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO EMPLOYEES (46100[*],USER_1,101 "; expected "identifier"; SQL statement:
+Insert into EMPLOYEES (46100,User_1,101 [42001-181]
+12-21 19:46:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO EMPLOYEES (46101[*],USER_2,102 "; expected "identifier"; SQL statement:
+Insert into EMPLOYEES (46101,User_2,102 [42001-181]
+12-21 19:46:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO EMPLOYEES (46102[*],USER_3,103 "; expected "identifier"; SQL statement:
+Insert into EMPLOYEES (46102,User_3,103 [42001-181]
+12-21 19:46:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO EMPLOYEES (46103[*],USER_4,104 "; expected "identifier"; SQL statement:
+Insert into EMPLOYEES (46103,User_4,104 [42001-181]
+12-21 19:48:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "Insert into EMPLOYEES ('46100','User_1',[*]'101,)"; SQL statement:
+Insert into EMPLOYEES ('46100','User_1','101,) [42000-181]
+12-21 19:48:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "Insert into EMPLOYEES ('46101','User_2',[*]'102,)"; SQL statement:
+Insert into EMPLOYEES ('46101','User_2','102,) [42000-181]
+12-21 19:48:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "Insert into EMPLOYEES ('46102','User_3',[*]'103,)"; SQL statement:
+Insert into EMPLOYEES ('46102','User_3','103,) [42000-181]
+12-21 19:48:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "Insert into EMPLOYEES ('46103','User_4',[*]'104,)"; SQL statement:
+Insert into EMPLOYEES ('46103','User_4','104,) [42000-181]
+12-21 19:48:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO EMPLOYEES ('46100'[*],'User_1','101') "; expected "identifier"; SQL statement:
+Insert into EMPLOYEES ('46100','User_1','101') [42001-181]
+12-21 19:48:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO EMPLOYEES ('46101'[*],'User_2','102') "; expected "identifier"; SQL statement:
+Insert into EMPLOYEES ('46101','User_2','102') [42001-181]
+12-21 19:48:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO EMPLOYEES ('46102'[*],'User_3','103') "; expected "identifier"; SQL statement:
+Insert into EMPLOYEES ('46102','User_3','103') [42001-181]
+12-21 19:48:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO EMPLOYEES ('46103'[*],'User_4','104') "; expected "identifier"; SQL statement:
+Insert into EMPLOYEES ('46103','User_4','104') [42001-181]
+12-21 19:49:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO EMPLOYEES (46100[*],'User_1',101) "; expected "identifier"; SQL statement:
+Insert into EMPLOYEES (46100,'User_1',101) [42001-181]
+12-21 19:49:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO EMPLOYEES (46101[*],'User_2',102) "; expected "identifier"; SQL statement:
+Insert into EMPLOYEES (46101,'User_2',102) [42001-181]
+12-21 19:49:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO EMPLOYEES (46102[*],'User_3',103) "; expected "identifier"; SQL statement:
+Insert into EMPLOYEES (46102,'User_3',103) [42001-181]
+12-21 19:49:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO EMPLOYEES (46103[*],'User_4',104) "; expected "identifier"; SQL statement:
+Insert into EMPLOYEES (46103,'User_4',104) [42001-181]
+12-21 19:50:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO EMPLOYEES (46100[*],'User_1',101) "; expected "identifier"; SQL statement:
+Insert into EMPLOYEES (46100,'User_1',101) [42001-181]
+12-21 19:50:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO EMPLOYEES (46101[*],'User_2',102) "; expected "identifier"; SQL statement:
+Insert into EMPLOYEES (46101,'User_2',102) [42001-181]
+12-21 19:50:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO EMPLOYEES (46102[*],'User_3',103) "; expected "identifier"; SQL statement:
+Insert into EMPLOYEES (46102,'User_3',103) [42001-181]
+12-21 19:50:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "INSERT INTO EMPLOYEES (46103[*],'User_4',104) "; expected "identifier"; SQL statement:
+Insert into EMPLOYEES (46103,'User_4',104) [42001-181]
+12-23 00:41:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "EMPLOYEES" already exists; SQL statement:
+Create table EMPLOYEES (EMPLOYEE_ID NUMBER, EMPLOYEE_NAME VARCHAR2(40), JOB_ID NUMBER) [42101-181]
