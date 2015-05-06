@@ -1,13 +1,19 @@
 package com.SMS.ReportExport.services;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.InputStream;
+import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
 import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JasperCompileManager;
+import net.sf.jasperreports.engine.JasperExportManager;
 import net.sf.jasperreports.engine.JasperFillManager;
+import net.sf.jasperreports.engine.JasperPrint;
 import net.sf.jasperreports.engine.JasperReport;
 import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 import net.sf.jasperreports.engine.design.JasperDesign;
@@ -19,7 +25,7 @@ import com.SMS.ReportExport.main.StudentCourseBatchDataBean;
 
 public class JasperReportFill {
 	
-		public static final String TEMPLATE = "/StudentCourseBatchSchedule.jrxml";
+		public static final String TEMPLATE = "jrxml/StudentCourseBatchSchedule.jrxml";
 		
 		public void reportService(){
 			
@@ -39,9 +45,15 @@ public class JasperReportFill {
 				
 				JasperReport jr = JasperCompileManager.compileReport(jd);	
 			
-				JasperFillManager.fillReport(reportStream, parameters, beanColDataSource);
+				JasperPrint jasperPrint = JasperFillManager.fillReport(reportStream, parameters, beanColDataSource);
+				
+				OutputStream outputStream = new FileOutputStream(new File("report/student.pdf"));
+				
+				JasperExportManager.exportReportToPdfStream(jasperPrint, outputStream);
 				
 			}catch (JRException e){
+					e.printStackTrace();
+			}catch (FileNotFoundException e){
 					e.printStackTrace();
 			}
 		

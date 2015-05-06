@@ -13,18 +13,8 @@ import com.SMS.ReportExport.entities.StudentCourseBatch;
 public class TestReport {
 
 	public static void main(String[] args) {
-//		JasperDataSourcesStudentCourseBatch databean = new JasperDataSourcesStudentCourseBatch();
-//		
-//		ArrayList<StudentCourseBatch> datalist = databean.getdatabean();
-//	
-//		JRBeanCollectionDataSource beanColDataSource = new JRBeanCollectionDataSource(datalist);
-//	
-//		Map parameters = new HashMap();
-//		try{
-//		JasperFillManager.fillReport(inputStream, parameters, beanColDataSource);
-//		}catch (JRException e){
-//		e.printStackTrace();
-//		}
+		
+		
 
 	}
 
